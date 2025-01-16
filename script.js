@@ -5,10 +5,10 @@ function getRandomInt(min, max) {
 const winner = getRandomInt(1, 3)
 
 function isWinner(button) {
-    const buttonNumber = parseInt(button.getAttribute('data-number'))
-    if (buttonNumber == winner) {
-        alert("Congratulations! You won!")
+    const buttonNumber = parseInt(button.getAttribute('data-number'));
+    if (buttonNumber === winner) {
+        alert("Congratulations! You won!");
     } else {
-        alert("You lost")
+        alert("You lost");
     }
 }
